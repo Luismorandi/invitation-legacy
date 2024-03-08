@@ -282,7 +282,12 @@ const util = (() => {
 
     const invitados = [
         {"luislamt7@gmail.com":{"cantidad":4}},
-        {"javier@gmail.com":{"cantidad":1}}
+        {"angelicaaristimuno@gmail.com":{"cantidad":4}},
+        {"ana_17184@hotmail.com":{"cantidad":2}},
+        {"nahuel.roldan9999@gmail.com":{"cantidad":1}},
+        {"fatimarojasc.16@gmail.com":{"cantidad":1}},
+        {"aristimunoi5@gmail.com":{"cantidad":1}}
+
     ]
  
 
