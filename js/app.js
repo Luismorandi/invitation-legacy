@@ -286,7 +286,12 @@ const util = (() => {
         {"ana_17184@hotmail.com":{"cantidad":2}},
         {"nahuel.roldan9999@gmail.com":{"cantidad":1}},
         {"fatimarojasc.16@gmail.com":{"cantidad":1}},
-        {"aristimunoi5@gmail.com":{"cantidad":1}}
+        {"aristimunoi5@gmail.com":{"cantidad":1}},
+        {"jesus.arao1@gmail.com":{"cantidad":1}},
+        {"mora.rolls@gmail.com":{"cantidad":2}},
+
+
+
 
     ]
  
