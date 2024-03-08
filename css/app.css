@@ -26,7 +26,16 @@ body {
     font-weight: 900; /* Peso normal */
     color: #db5035 !important;
 }
+.video-youtube{
+    width:560;
+     height:315
+}
 
+@media (max-width: 554px) {
+    .video-youtube {
+        width: 100%;
+    }
+}
 .font-arabic-bold {
     font-family: 'Inter', sans-serif !important; /* Utilizando la fuente Inter */
     font-weight: 600; /* Peso bold */

@@ -181,8 +181,8 @@ const util = (() => {
     };
 
     const modal = (img) => {
-        document.getElementById('show-modal-image').src = img.src;
-        (new bootstrap.Modal('#modal-image')).show();
+        document.getElementById('show-modal-image').src = img?.src;
+        (new bootstrap.Modal('#modal-image'))?.show();
     };
 
     const tamu = () => {
@@ -194,7 +194,7 @@ const util = (() => {
         }
 
         let div = document.createElement('div');
-        div.classList.add('m-2');
+        div.classList?.add('m-2');
         div.innerHTML = `<p class="mt-0 mb-1 mx-0 p-0 text-light">Kepada Yth Bapak/Ibu/Saudara/i</p><h2 class="text-light">${escapeHtml(name)}</h2>`;
 
         document.getElementById('form-nama').value = name;
@@ -290,7 +290,7 @@ const util = (() => {
         let handler = null;
 
         handler = setTimeout(() => {
-            svg.classList.add(classes);
+            svg.classList?.add(classes);
             handler = null;
         }, timeout);
     };
@@ -427,11 +427,11 @@ const pagination = (() => {
     const next = document.getElementById('next');
 
     const disabledPrevious = () => {
-        prev.classList.add('disabled');
+        prev.classList?.add('disabled');
     };
 
     const disabledNext = () => {
-        next.classList.add('disabled');
+        next.classList?.add('disabled');
     };
 
     const buttonAction = async (button) => {
@@ -455,7 +455,7 @@ const pagination = (() => {
             pageNow = 0;
             resultData = 0;
             page.innerText = 1;
-            next.classList.remove('disabled');
+            next.classList?.remove('disabled');
             await comment.ucapan();
             disabledPrevious();
         },
@@ -473,7 +473,7 @@ const pagination = (() => {
                 disabledNext();
                 await buttonAction(button);
                 page.innerText = parseInt(page.innerText) - 1;
-                next.classList.remove('disabled');
+                next.classList?.remove('disabled');
                 if (pageNow <= 0) {
                     disabledPrevious();
                 }
@@ -487,7 +487,7 @@ const pagination = (() => {
                 disabledPrevious();
                 await buttonAction(button);
                 page.innerText = parseInt(page.innerText) + 1;
-                prev.classList.remove('disabled');
+                prev.classList?.remove('disabled');
             }
         }
     };
@@ -563,8 +563,8 @@ const like = (() => {
                     if (res.data.status) {
                         likes.unset(id);
 
-                        heart.classList.remove('fa-solid', 'text-danger');
-                        heart.classList.add('fa-regular');
+                        heart.classList?.remove('fa-solid', 'text-danger');
+                        heart.classList?.add('fa-regular');
 
                         info.setAttribute('data-suka', (parseInt(info.getAttribute('data-suka')) - 1).toString());
                     }
@@ -580,8 +580,8 @@ const like = (() => {
                     if (res.code == 201) {
                         likes.set(id, res.data.uuid);
 
-                        heart.classList.remove('fa-regular');
-                        heart.classList.add('fa-solid', 'text-danger');
+                        heart.classList?.remove('fa-regular');
+                        heart.classList?.add('fa-solid', 'text-danger');
 
                         info.setAttribute('data-suka', (parseInt(info.getAttribute('data-suka')) + 1).toString());
                     }
@@ -651,8 +651,8 @@ const comment = (() => {
 
         await requestV2('POST', '/')
         .body({
-            status: "aceptaron",
-            message: `aceptaron : El usuario ${user.email} acepto ir al casamiento con ${selectElement.value} personas.`
+            email:user.email,
+            countOfGuests: +selectElement.value
         })
         .then((res) => {
             console.log(res)
