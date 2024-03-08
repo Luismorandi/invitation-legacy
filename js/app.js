@@ -8,7 +8,6 @@ const storage = (table) => {
         let data = JSON.parse(localStorage.getItem(table));
         return key ? data[key] : data;
     };
-//e3d5ca
     const set = (key, value) => {
         let storage = get();
         storage[key] = value;
@@ -408,12 +407,21 @@ const comment = (() => {
 
 
         const selectElement = document.getElementById("form-kehadiran");
+        
+        let countOfGuestsCopy 
+
+        if(selectElement?.value){
+            countOfGuestsCopy= selectElement?.value
+        }else{
+            countOfGuestsCopy= 1
+        }
+
 
 
         await requestV2('POST', '/')
         .body({
             email:user.email,
-            countOfGuests: +selectElement.value
+            countOfGuests: countOfGuestsCopy
         })
         .then((res) => {
 
