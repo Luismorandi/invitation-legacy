@@ -387,8 +387,21 @@ const audio = (() => {
 
 const comment = (() => {
     const sendAceptation = async () => {
+        
      
         const user = JSON.parse(localStorage.getItem("user"));
+        const asistConfirmation = document.getElementById("button-asist");
+        asistConfirmation.parentNode.removeChild(asistConfirmation);
+        const nuevoElemento = document.createElement("p");
+        nuevoElemento.className = "spinner-border text-primary mb-0";
+        nuevoElemento.setAttribute("role", "status");
+
+        // Selecciona el div al que se agregará el elemento
+        const divDestino = document.getElementById("kirim");
+
+        // Agrega el nuevo elemento al div
+        divDestino.appendChild(nuevoElemento);
+
 
         const selectElement = document.getElementById("form-kehadiran");
 
@@ -399,7 +412,7 @@ const comment = (() => {
             countOfGuests: +selectElement.value
         })
         .then((res) => {
-            console.log(res)
+
             alert("Gracias! Te esperamos")
             window.location.reload();
             if (res.code == 200 || res.code == 201) {
