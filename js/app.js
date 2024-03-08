@@ -246,12 +246,16 @@ const util = (() => {
         {"luislamt7@gmail.com":{"cantidad":4}},
         {"angelicaaristimuno@gmail.com":{"cantidad":4}},
         {"ana_17184@hotmail.com":{"cantidad":2}},
-        {"aristviloria93@hotmail.com":{"cantidad":2}},
+        {"yessika_aladejo522@hotmail.com":{"cantidad":2}},
+        {"luferodriguezr@gmail.com":{"cantidad":1}},
+        {"aristviloria93@gmail.com":{"cantidad":2}},
         {"nahuel.roldan9999@gmail.com":{"cantidad":1}},
         {"fatimarojasc.16@gmail.com":{"cantidad":1}},
         {"aristimunoi5@gmail.com":{"cantidad":1}},
         {"jesus.arao1@gmail.com":{"cantidad":1}},
         {"mora.rolls@gmail.com":{"cantidad":2}},
+        {"maringta@yahoo.com":{"cantidad":5}},
+        {"vanesakgutierrezt@gmail.com":{"cantidad":2}},
     ]
  
 
