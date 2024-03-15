@@ -264,6 +264,8 @@ const util = (() => {
         {"ezequielpangare@gmail.com":{"cantidad":1}},
         {"morandihueso@gmail.com":{"cantidad":1}},
         {"mayerling.anton@gmail.com":{"cantidad":2}},
+        {"gabylechin91@gmail.com":{"cantidad":1}},
+
 
     ]
  
